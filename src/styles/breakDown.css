@@ -89,9 +89,9 @@
   transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* When content is toggled open */
+
 .dropdown-content.show {
-  max-height: 1000px; /* High enough to fit tallest content */
+  max-height: 1000px; 
   opacity: 1;
   transform: translateY(0);
 }

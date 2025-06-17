@@ -89,10 +89,18 @@
 .footer-form > p > a {
   color: black;
 }
+
 .footer-form > p > a:hover {
   color: white;
 }
-
+.footer-form >.form-button:hover{
+  background-color: black;
+  transition: 0.4s;
+  color: white;
+}
+.footer-form >.form-button>a:hover{
+  color: white;
+}
 .about-text {
   font-size: 12px;
 }

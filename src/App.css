@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Druk";
   src: url("/fonts/Druk-Medium-Trial.otf") format("opentype");
-  font-weight: 300; /* or 400 depending on how "medium" it looks */
+  font-weight: 300; 
   font-style: normal;
 }
 

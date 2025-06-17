@@ -78,7 +78,7 @@
   padding: 0%;
   animation: revealTopToBottom 0.7s ease-out forwards;
   animation-delay: 2s;
-  /* Magic: start clipped and reveal downward */
+ 
   clip-path: inset(100% 0 0 0);
 }
 
@@ -127,7 +127,7 @@
 
 @keyframes revealTopToBottom {
   to {
-    clip-path: inset(0 0 0 0); /* Reveal from top to bottom */
+    clip-path: inset(0 0 0 0); 
   }
 }
 
