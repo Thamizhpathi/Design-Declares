@@ -29,7 +29,7 @@ const SignatoriesComponent = () => {
       i++;
       setCount(i);
       if (i === target) clearInterval(interval);
-    }, 0.2);
+    }, 70 );
 
     return () => clearInterval(interval);
   }, []);
@@ -40,8 +40,8 @@ const SignatoriesComponent = () => {
         className={`donate-container slide-up ${visible ? "visible" : ""}`}
       >
         <div className="signatories-container">
-          <div className="count-container">
-            <div className="word-count">#{count}</div>
+          <div className="count-container" >
+            <div className="word-count ">#{count}</div>
             <div className="word-count-heading">
               Signatories and Counting in <span>D! UK</span>
             </div>

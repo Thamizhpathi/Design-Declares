@@ -37,7 +37,7 @@ const GlobalSupportersComponents = () => {
       i++;
       setCount(i);
       if (i >= totalNames) clearInterval(interval);
-    }, 0.2);
+    }, 70 );
 
     return () => clearInterval(interval);
   }, []);
