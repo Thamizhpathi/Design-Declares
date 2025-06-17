@@ -1,0 +1,15 @@
+:root {
+  font-family:_druk_ba9c3a,Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #ff6340;
+  color: white;
+
+ 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}

@@ -1,0 +1,77 @@
+.signatories-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  font-family: inter;
+  display: flex;
+  margin: auto;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+}
+.signatories-grid {
+  column-count: 3;
+  column-gap: 1rem;
+  width: 95%;
+  margin: auto;
+  font-size: 12px;
+  min-height: 90vh;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.item {
+  break-inside: avoid;
+  cursor: pointer;
+  color: #c4c4c4;
+  
+}
+.count-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+.word-count{
+    font-size: 60px;
+    height: max-content;
+}
+
+.word-count-heading{
+    font-size: 18px;
+}
+.word-count-heading span{
+    padding: 3px 5px 3px 5px;
+    font-size: 12px;
+    background-color:#ff6340 ;
+    color: black;
+    border-radius: 10px;
+}
+.item:hover{
+    text-decoration: underline;
+}
+@media(min-width:768px){
+   .signatories-grid {
+  column-count: 4;} 
+  .word-count-heading{
+    font-size: 24px;
+}
+}
+
+
+@media(min-width:1024px){
+   .signatories-grid {
+  column-count: 6;} 
+  .word-count-heading{
+    font-size: 24px;
+}
+}
+@media(min-width:1440px){
+   .signatories-grid {
+  column-count: 9;} 
+  .word-count-heading{
+    font-size: 24px;
+}
+}

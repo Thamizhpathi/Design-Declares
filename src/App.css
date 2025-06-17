@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Druk";
+  src: url("/fonts/Druk-Medium-Trial.otf") format("opentype");
+  font-weight: 300; /* or 400 depending on how "medium" it looks */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Druk";
+  src: url("/fonts/Druk-Bold-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #ff6340;
+  transition: width 0.5s ease-out;
+}
+
+.main-container {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  margin-bottom: 750px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 400px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: black;
+  }
+}

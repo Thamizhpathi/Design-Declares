@@ -1,0 +1,137 @@
+.menubar-container {
+  width: 95%;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 1rem;
+  background-color: #e7e7e7;
+  color: black;
+  font-family: inter;
+}
+.menu-titles {
+  display: flex;
+  flex-direction: column;
+}
+.menu-flex:hover{
+    background-color: #ff6340;
+    transition: 0.3s;
+}
+.declare:hover{
+    background-color: #ff6340;
+    transition: 0.3s;
+}
+.menu-links.links a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+.menu-titles .menu-flex {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.menu-flex div:nth-child(1) {
+  width: 85%;
+  
+  border-right: 1px solid black;
+  
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  padding-left: 19px;
+}
+
+
+.menu-links {
+  max-height: 0;
+  width: max-content;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 10px;
+  border-top: 1px solid black;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.menu-links.show {
+    width: 100%;
+  max-height: 500px; 
+  padding: 10px;
+}
+.icon-style {
+  
+   transition: transform 0.3s ease;
+}
+.icon-style.rotate{
+  transform: rotate(45deg);
+}
+.menu-flex div:nth-child(1) a {
+  width: 100%;
+
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-titles .links a {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.menu-titles .declare {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+.menu-titles .declare a {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .menubar-container {
+    width: 15%;
+    position: fixed;
+    right: 1.7rem;
+    bottom: 2rem;
+
+    font-family: inter;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .menubar-container {
+    width:max-content;
+    position: fixed;
+    right: 1.7rem;
+    bottom: 2rem;
+
+    font-family: inter;
+  }
+}

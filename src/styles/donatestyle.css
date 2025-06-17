@@ -1,0 +1,161 @@
+.donate-container {
+  width: 100%;
+  position: relative;
+  height: max-content;
+  font-family: inter;
+  display: flex;
+  margin: auto;
+}
+.donate-flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  min-height: 90vh;
+  max-height: max-content;
+  margin: auto;
+}
+.donate-heading-first {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.headings {
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+
+.headings p {
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+  font-size: 20px;
+  color: white;
+  width: 60%;
+  z-index: 10;
+}
+.donate-component {
+  width: 100%;
+}
+.donate-heading {
+  width: 100%;
+  font-size: 24px;
+  color: #c4c4c4;
+  line-height: 35.1px;
+  margin-bottom: 2.5rem;
+}
+
+.donate-button {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  border-radius: 32px;
+  background-color: white;
+  padding: 8px 12px 8px 12px;
+  margin-top: 0.5rem;
+}
+.donate-button a {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.donate-button:hover {
+  background-color: #ff6340;
+  transition: 0.3s;
+}
+.donate-button a:hover {
+  color: black;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .donate-button-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .donate-button {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    border-radius: 32px;
+    background-color: white;
+    padding: 8px 12px 8px 12px;
+    margin-top: 0.5rem;
+  }
+  .donate-button a {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .donate-button:hover {
+    background-color: #ff6340;
+  }
+}
+
+@media (min-width: 1024px) {
+  .donate-container {
+    width: 100%;
+    position: relative;
+    height: max-content;
+    font-family: inter;
+    display: flex;
+    margin: auto;
+  }
+  .donate-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    min-height: 50vh;
+    max-height: max-content;
+    margin: auto;
+    
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .donate-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .donate-heading-first {
+    width: 45%;
+  }
+  .donate-component {
+    width: 55%;
+  }
+  .headings {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .headings p {
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    font-size: 28px;
+    width: 60%;
+    z-index: 10;
+  }
+}

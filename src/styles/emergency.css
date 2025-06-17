@@ -1,0 +1,114 @@
+.emergency-container {
+  width: 100%;
+  position: relative;
+  height: max-content;
+  font-family: inter;
+  display: flex;
+  margin: auto;
+}
+.emergency-flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  min-height: 90vh;
+  max-height: max-content;
+  margin: auto;
+}
+.emergency-heading-first {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+
+.emergency-component {
+  width: 100%;
+}
+.emergency-heading {
+  width: 100%;
+  font-size: 24px;
+  color: #c4c4c4;
+  line-height: 35.1px;
+  margin-bottom: 2.5rem;
+}
+
+.emergency-card {
+  width: 100%;
+  background-color: #E7E7E7;
+  height: max-content;
+}
+.each-card {
+  display: flex;
+  border: 1px solid black;
+  border-left:none ;
+  border-right: none;
+  color: black;
+}
+.each-card p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  width: 10%;
+  padding: 0;
+  margin: 0;
+}
+.each-card p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid black;
+  font-size: 34px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.emergency-content p {
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  margin: 16px;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .each-card p:nth-child(1) {
+    font-size: 56px;
+  }
+  .each-card p:nth-child(2) {
+    font-size: 56px;
+  }
+  .emergency-content p {
+    font-size: 18px;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .emergency-container {
+    width: 100%;
+    position: relative;
+    height: max-content;
+    font-family: inter;
+    display: flex;
+    margin: auto;
+  }
+  .emergency-flex {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    min-height: 90vh;
+    max-height: max-content;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .emergency-heading-first {
+    width: 45%;
+  }
+  .emergency-component {
+    width: 55%;
+  }
+}

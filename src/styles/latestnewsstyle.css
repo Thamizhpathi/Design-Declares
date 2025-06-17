@@ -1,0 +1,142 @@
+.latestNews-container {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  font-family: inter;
+  display: flex;
+  margin: auto;
+}
+.latestNews-flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: max-content;
+  margin: auto;
+}
+.latestNews-heading-first {
+  display: flex;
+  position: relative;
+  height: max-content;
+  
+}
+.headings1 {
+  position: relative;
+
+  width: 100%;
+ height: 100%;
+
+}
+
+.headings1 p {
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+  font-size: 32px;
+  color: white;
+  width: 60%;
+  z-index: 10;
+}
+
+.latestNews-component {
+  width: 100%;
+  font-family: inter;
+  height: max-content;
+}
+
+.top-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: max-content;
+}
+.top-row p:nth-child(1) {
+  padding: 6px 15px 6px 15px;
+  background-color: #272727;
+  border-radius: 18px;
+  color: #c4c4c4;
+  margin-right: 10px;
+}
+.top-row p:nth-child(2) {
+  padding: 5px 18px 5px 18px;
+  background-color: #272727;
+  
+  border-radius: 18px;
+  color: #c4c4c4;
+  margin-right: 30px;
+}
+.top-row p:nth-child(3) {
+  text-align: center;
+  height: min-content;
+  font-size: 11px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+.right-container div:nth-child(1) {
+  margin-top: 1rem;
+  width: 90%;
+  font-size: 24px;
+  font-weight: 400;
+
+  line-height: 34.1px;
+}
+.right-container div:nth-child(2) {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-container div:nth-child(2) p:nth-child(1) {
+  font-size: 16px;
+  color: #c4c4c4;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.right-container div:nth-child(2) a:nth-child(1) {
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+@media (min-width: 768px) {
+  .right-container {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+  }
+  .right-container div:nth-child(1) {
+    font-size: 32px;
+    line-height: 40.1px;
+  }
+  .right-container div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .latestNews-flex {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    max-height: max-content;
+  }
+  .latestNews-heading-first {
+    width: 45%;
+    height:74vh;
+  }
+  .latestNews-component {
+    width: 55%;
+  }
+
+  .right-container {
+    gap: 3rem;
+  }
+}

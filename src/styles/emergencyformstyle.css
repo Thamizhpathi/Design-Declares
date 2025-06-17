@@ -1,0 +1,256 @@
+.emergencyForm-container {
+  width: 100%;
+  position: relative;
+  height: max-content;
+  font-family: inter;
+  display: flex;
+  margin: auto;
+}
+.emergencyForm-flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  min-height: 90vh;
+  max-height: max-content;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.emergencyForm-heading-first {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.emergencyForm-component {
+  width: 100%;
+}
+
+.emergencyForm-heading {
+  position: relative;
+  width: 100%;
+  font-size: 24px;
+  color: #c4c4c4;
+  line-height: 35.1px;
+  margin-bottom: 2.5rem;
+}
+
+.emergencyForm-card {
+  position: relative;
+  width: 100%;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.emergencyForm-card p {
+  font-size: 32px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.form-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 95%;
+  font-family: inter;
+  border: 1px solid white;
+}
+.input-label-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  min-height: 80px;
+}
+
+.input-label-wrapper label {
+  width: 95%;
+  align-self: center;
+  font-size: 15px;
+}
+
+.form-card input[type="text"],
+.form-card input[type="checkbox"],
+.form-card input[type="email"],
+.form-card select {
+  border: none;
+  background-color: transparent;
+  width: 95%;
+  align-self: center;
+  color: white;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.form-card select option {
+  background-color: black;
+  color: white;
+}
+textarea {
+  width: 100%;
+  background-color: transparent;
+  font-family: inter;
+  font-size: 18px;
+  color: white;
+  outline: #ff6340;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.custom-box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  position: relative;
+  background-color: transparent;
+  transition: 0.2s;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.custom-box::before,
+.custom-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 1px;
+  background-color: white;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  opacity: 0;
+}
+
+/* When checked, animate cross lines */
+.custom-box.checked::before {
+  animation: growLine45 0.3s ease-out forwards;
+}
+
+.custom-box.checked::after {
+  animation: growLineNeg45 0.3s ease-out forwards;
+}
+
+.terms-box-area {
+  margin: 2rem;
+}
+
+.terms-box-area .label-text {
+  font-size: 10px;
+}
+.privacy-text {
+  margin: 2rem 0 2rem 0;
+  font-size: 10px;
+}
+.privacy-text p {
+  font-size: 10px;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 32px;
+  background-color: white;
+  padding: 8px 12px 8px 12px;
+  margin-top: 0.5rem;
+}
+.form-button a {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-button:hover {
+  background-color: #ff6340;
+  transition: 0.5s;
+}
+
+.form-button:hover a {
+  color: black;
+}
+/* Animations for the ❌ lines */
+@keyframes growLine45 {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(45deg);
+    opacity: 1;
+  }
+}
+
+@keyframes growLineNeg45 {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(-45deg);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .emergencyForm-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .emergencyForm-heading-first {
+    display: flex;
+    position: relative;
+    width: 45%;
+  }
+
+  .emergencyForm-component {
+    width: 55%;
+  }
+  .checkbox-wrapper {
+    margin-top: 1rem;
+  }
+  .label-text{
+    font-size: 12px;
+  }
+
+  .form-button {
+  width: max-content;
+  padding: 8px 15px 8px 15px;
+}
+
+.input-label-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.input-label-wrapper label{
+  width: 24%;
+
+  height: 100%;
+  font-size: 18px;
+}
+}
