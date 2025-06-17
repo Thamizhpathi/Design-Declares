@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import GlobalSupportersComponents from "./components/GlobalSupportersComponents";
 import LandingComponents from "./components/LandingComponents";
 import LatestNewsComponent from "./components/LatestNewsComponent";
-import LoaderBar from "./components/loaderBar";
+import LoaderBar from "./components/LoaderBar";
 import MenuBarComponent from "./components/MenuBarComponent";
 import NewsLetterComponent from "./components/NewsLetterComponent";
 import SignatoriesComponent from "./components/SignatoriesComponent";
@@ -27,12 +27,11 @@ function App() {
           <NewsLetterComponent />
           <SignatoriesComponent />
           <GlobalSupportersComponents />
-          <MenuBarComponent/>
+          <MenuBarComponent />
         </div>
       </div>
-     
-        <Footer />
-      
+
+      <Footer />
     </>
   );
 }
