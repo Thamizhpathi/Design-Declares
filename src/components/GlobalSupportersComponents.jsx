@@ -74,6 +74,7 @@ const GlobalSupportersComponents = () => {
             })}
           </div>
         </div>
+        
       </div>
     </>
   );

@@ -24,7 +24,7 @@ const LatestNewsComponent = () => {
   return (
     <div
       ref={donateRef}
-      className={`donate-container slide-up ${visible ? "visible" : ""}`}
+      className={`donate-container slide-up ${visible ? "visible " : ""}`}
     >
       <div className="latestNews-container">
         <div className="latestNews-flex">
@@ -40,11 +40,21 @@ const LatestNewsComponent = () => {
               <p>24.04.2025, 03 PM:30</p>
             </div>
             <div className="right-container">
-              <div>
+              <div
+                ref={donateRef}
+                className={`donate-container slide-up ${
+                  visible ? "slide " : ""
+                }`}
+              >
                 SD4P Collective: How can Service Design drive meaningful
                 sustainability impact
               </div>
-              <div>
+              <div
+                ref={donateRef}
+                className={`donate-container slide-up ${
+                  visible ? "slide " : ""
+                }`}
+              >
                 <p>Recap: SD4P Collective working session – 28th March 2025</p>
                 <a href="">Read Story</a>
               </div>
@@ -56,11 +66,21 @@ const LatestNewsComponent = () => {
               <p>06.12.2024, 02 PM:30</p>
             </div>
             <div className="right-container">
-              <div>
+              <div
+                ref={donateRef}
+                className={`donate-container slide-up ${
+                  visible ? "slide " : ""
+                }`}
+              >
                 Designing Tomorrow: Speculative Thinking Shapes Our Present
               </div>
               <div>
-                <p>
+                <p
+                  ref={donateRef}
+                  className={`donate-container slide-up ${
+                    visible ? "slide " : ""
+                  }`}
+                >
                   Design Declares' November Event Challenges Perspectives on
                   Sustainability and Innovation
                 </p>

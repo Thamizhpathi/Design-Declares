@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className="main-container">
-        <div className="containers">
+      
           <LoaderBar />
           <LandingComponents />
           <BreakDown />
@@ -27,8 +27,8 @@ function App() {
           <NewsLetterComponent />
           <SignatoriesComponent />
           <GlobalSupportersComponents />
+
           <MenuBarComponent />
-        </div>
       </div>
 
       <Footer />

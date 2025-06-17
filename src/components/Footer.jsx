@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/footerstyle.css";
+
 const Footer = () => {
   const [consents, setConsents] = useState({
     dataConsent: false,
@@ -67,6 +68,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
+        
       </div>
     </>
   );

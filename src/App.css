@@ -40,8 +40,8 @@
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
   background-color: black;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
 }
 
 @media (min-width: 768px) {
